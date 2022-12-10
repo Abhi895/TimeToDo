@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nhf-XJ-lpD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nhf-XJ-lpD">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -175,14 +175,15 @@
                                 <rect key="frame" x="20" y="311" width="374" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter one hobby at a time" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Y2g-6R-ANQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="274.33333333333331" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="40"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e84-q2-3nM">
-                                        <rect key="frame" x="294.33333333333331" y="0.0" width="79.666666666666686" height="40"/>
+                                        <rect key="frame" x="344" y="0.0" width="30" height="40"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="PPo-n1-u5l"/>
                                             <constraint firstAttribute="height" constant="40" id="ncn-1J-261"/>
                                         </constraints>
                                         <state key="normal" title="Button">
@@ -194,13 +195,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXl-EI-Lhj">
-                                <rect key="frame" x="20" y="406.33333333333326" width="374" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="yZY-4o-rar"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhoneBackgroundThree" translatesAutoresizingMaskIntoConstraints="NO" id="qd7-7m-J29">
                                 <rect key="frame" x="-2" y="-2" width="418" height="166"/>
                                 <constraints>
@@ -236,6 +230,10 @@
                                     <action selector="nextButtonPressed:" destination="DWH-4I-odh" eventType="touchUpInside" id="odB-6E-yLT"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5VS-rt-Lwu">
+                                <rect key="frame" x="20" y="396.33333333333326" width="374" height="320.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ddZ-Mi-xHM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -244,27 +242,28 @@
                             <constraint firstItem="tPW-oe-t9P" firstAttribute="centerX" secondItem="OXP-GV-e9R" secondAttribute="centerX" id="Drs-6u-3Y4"/>
                             <constraint firstItem="k09-H9-Aws" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ddZ-Mi-xHM" secondAttribute="leading" id="ELp-Xl-Eun"/>
                             <constraint firstItem="k09-H9-Aws" firstAttribute="centerX" secondItem="OXP-GV-e9R" secondAttribute="centerX" id="H50-Oc-uoY"/>
-                            <constraint firstItem="ddZ-Mi-xHM" firstAttribute="trailing" secondItem="IXl-EI-Lhj" secondAttribute="trailing" constant="20" id="JGd-mt-t7Z"/>
                             <constraint firstAttribute="trailing" secondItem="qd7-7m-J29" secondAttribute="trailing" constant="-2" id="MH5-yk-gD6"/>
-                            <constraint firstItem="IXl-EI-Lhj" firstAttribute="top" secondItem="k09-H9-Aws" secondAttribute="bottom" constant="30" id="PBt-QT-vgI"/>
                             <constraint firstItem="k09-H9-Aws" firstAttribute="top" secondItem="mDJ-5C-MV4" secondAttribute="bottom" constant="5" id="Qgi-on-6sU"/>
+                            <constraint firstItem="tPW-oe-t9P" firstAttribute="top" secondItem="5VS-rt-Lwu" secondAttribute="bottom" constant="20" id="RT3-OC-QRf"/>
                             <constraint firstItem="ddZ-Mi-xHM" firstAttribute="bottom" secondItem="tPW-oe-t9P" secondAttribute="bottom" constant="75" id="ULf-PY-iHi"/>
                             <constraint firstItem="ddZ-Mi-xHM" firstAttribute="trailing" secondItem="k09-H9-Aws" secondAttribute="trailing" constant="20" id="Ug5-Mc-ayd"/>
                             <constraint firstItem="ddZ-Mi-xHM" firstAttribute="trailing" secondItem="mDJ-5C-MV4" secondAttribute="trailing" constant="20" id="YVm-Kp-LTn"/>
                             <constraint firstItem="qd7-7m-J29" firstAttribute="top" secondItem="OXP-GV-e9R" secondAttribute="top" constant="-2" id="fFO-7a-Ii1"/>
+                            <constraint firstItem="5VS-rt-Lwu" firstAttribute="leading" secondItem="ddZ-Mi-xHM" secondAttribute="leading" constant="20" id="fNd-i7-RiC"/>
                             <constraint firstItem="qd7-7m-J29" firstAttribute="centerX" secondItem="OXP-GV-e9R" secondAttribute="centerX" id="jip-Uw-zA7"/>
                             <constraint firstItem="MPR-2e-6mt" firstAttribute="leading" secondItem="ddZ-Mi-xHM" secondAttribute="leading" constant="20" id="nRK-vp-tGt"/>
                             <constraint firstItem="ddZ-Mi-xHM" firstAttribute="trailing" secondItem="MPR-2e-6mt" secondAttribute="trailing" constant="20" id="p1f-WY-Hyl"/>
                             <constraint firstItem="mDJ-5C-MV4" firstAttribute="leading" secondItem="ddZ-Mi-xHM" secondAttribute="leading" constant="20" id="rds-qu-AOh"/>
                             <constraint firstItem="MPR-2e-6mt" firstAttribute="top" secondItem="qd7-7m-J29" secondAttribute="bottom" constant="30" id="rhY-g5-3am"/>
-                            <constraint firstItem="IXl-EI-Lhj" firstAttribute="leading" secondItem="ddZ-Mi-xHM" secondAttribute="leading" constant="20" id="xTP-fl-8JF"/>
+                            <constraint firstItem="ddZ-Mi-xHM" firstAttribute="trailing" secondItem="5VS-rt-Lwu" secondAttribute="trailing" constant="20" id="tDX-cd-TCj"/>
+                            <constraint firstItem="5VS-rt-Lwu" firstAttribute="top" secondItem="k09-H9-Aws" secondAttribute="bottom" constant="20" id="wZi-6O-eXl"/>
                             <constraint firstItem="qd7-7m-J29" firstAttribute="leading" secondItem="ddZ-Mi-xHM" secondAttribute="leading" constant="-2" id="yiJ-5R-GG4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="tPW-oe-t9P" id="X7S-T9-AUP"/>
                         <outlet property="hobbiesTextField" destination="Y2g-6R-ANQ" id="4xY-9K-bvi"/>
-                        <outlet property="hobbiesView" destination="IXl-EI-Lhj" id="wIc-2F-WYY"/>
+                        <outlet property="hobbiesView" destination="5VS-rt-Lwu" id="00Z-Yv-Uc7"/>
                         <outlet property="whatAreYourHobbiesLabel" destination="MPR-2e-6mt" id="OSM-1G-U34"/>
                     </connections>
                 </viewController>
@@ -295,7 +294,7 @@
         <image name="iPhoneBackground" width="246" height="530"/>
         <image name="iPhoneBackgroundThree" width="209.33332824707031" height="137.33332824707031"/>
         <image name="iPhoneBackgroundTwo" width="228.66667175292969" height="246.66667175292969"/>
-        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

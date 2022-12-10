@@ -16,6 +16,8 @@
 		E169908226A978FD00BA77AB /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169908126A978FD00BA77AB /* NameViewController.swift */; };
 		E169908426AAE65800BA77AB /* HobbiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169908326AAE65800BA77AB /* HobbiesViewController.swift */; };
 		E169908626AD9BD300BA77AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169908526AD9BD100BA77AB /* Constants.swift */; };
+		E1A7C6DD294482A200AE710B /* HobbyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A7C6DB294482A200AE710B /* HobbyCell.swift */; };
+		E1A7C6DE294482A200AE710B /* HobbyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A7C6DC294482A200AE710B /* HobbyCell.xib */; };
 		E1EB81E626A196E9000C26EA /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1EB81E526A196E6000C26EA /* Inter-Bold.ttf */; };
 		F05D21A457C25305932981CD /* Pods_Time_To_Do.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD0657B18692CEE95E0FAED /* Pods_Time_To_Do.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		E169908126A978FD00BA77AB /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		E169908326AAE65800BA77AB /* HobbiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbiesViewController.swift; sourceTree = "<group>"; };
 		E169908526AD9BD100BA77AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E1A7C6DB294482A200AE710B /* HobbyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCell.swift; sourceTree = "<group>"; };
+		E1A7C6DC294482A200AE710B /* HobbyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbyCell.xib; sourceTree = "<group>"; };
 		E1EB81E526A196E6000C26EA /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Inter-Bold.ttf"; path = "../../../Inter/static/Inter-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				E11F81F726A1925300E716FF /* Main.storyboard */,
+				E1A7C6DB294482A200AE710B /* HobbyCell.swift */,
+				E1A7C6DC294482A200AE710B /* HobbyCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11F81FE26A192C200E716FF /* LaunchScreen.storyboard in Resources */,
+				E1A7C6DE294482A200AE710B /* HobbyCell.xib in Resources */,
 				E11F81FB26A192C200E716FF /* Assets.xcassets in Resources */,
 				E1EB81E626A196E9000C26EA /* Inter-Bold.ttf in Resources */,
 				E11F81F926A1925300E716FF /* Main.storyboard in Resources */,
@@ -238,6 +245,7 @@
 				E11F81F626A1925200E716FF /* WelcomeViewController.swift in Sources */,
 				E11F81F226A1925200E716FF /* AppDelegate.swift in Sources */,
 				E11F81F426A1925200E716FF /* SceneDelegate.swift in Sources */,
+				E1A7C6DD294482A200AE710B /* HobbyCell.swift in Sources */,
 				E169908226A978FD00BA77AB /* NameViewController.swift in Sources */,
 				E169908426AAE65800BA77AB /* HobbiesViewController.swift in Sources */,
 				E169908626AD9BD300BA77AB /* Constants.swift in Sources */,
